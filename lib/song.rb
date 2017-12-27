@@ -30,16 +30,11 @@ class Song
   end
 
   def self.genre_count
-    #@@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
+    @@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
 
   def self.artist_count
-    counts = Hash.new 0
-
-    words.each do |word|
-      counts[word] += 1
-    end
-    binding.pry
-    counts
+    @@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
+  
 end
